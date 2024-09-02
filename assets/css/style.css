@@ -201,8 +201,21 @@ body {
 }
 
 .welcome {
-  margin-top: 8rem;
+  margin-top: 15rem;
   height: 2000px; /* To create enough content to scroll */
   padding: 20px;
   font-family: Arial, sans-serif;
+}
+
+.rest-name {
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+}
+
+.name-logo {
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 1;
 }
