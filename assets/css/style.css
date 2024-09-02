@@ -1,5 +1,11 @@
 body {
-  background-color: aliceblue;
+  background-image: url("../images/main-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -196,4 +202,7 @@ body {
 
 .welcome {
   margin-top: 8rem;
+  height: 2000px; /* To create enough content to scroll */
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
