@@ -24,27 +24,41 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>MI-mimic</title>
   </head>
+
+  <!-- <div class="logo me-auto me-lg-0">
+    <a href="#">
+      <img
+        src="assets/images/cropped-botanico-icon.png"
+        alt="logo"
+        class="home-logo"
+      />
+    </a>
+  </div> -->
+
   <body>
     <header id="header" class="fixed-top d-flex align-items-center">
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
       >
         <div class="logo me-auto me-lg-0">
-          <a href="{% url 'home' %}">
-            <img src="assets/images/cropped-botanico-icon.png" alt="logo" />
+          <a href="#">
+            <img
+              src="assets/images/cropped-botanico-icon.png"
+              alt="logo"
+              class="home-logo"
+            />
           </a>
         </div>
+
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li>
-              <a class="nav-link scrollto" href="{% url 'home' %}"
-                >Jungle Bar</a
-              >
+              <a class="nav-link scrollto" href="#">Jungle Bar</a>
             </li>
-            <li><a class="nav-link scrollto" href="#contact">Restuarang</a></li>
+            <li><a class="nav-link scrollto" href="#">Restuarang</a></li>
 
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'bookings' %}">Privat Dining</a>
+              <a class="nav-link" href="#">Privat Dining</a>
             </li>
           </ul>
         </nav>
@@ -55,6 +69,7 @@
     <section class="welcome">
       <div class="rest-name">
         <img src="assets/images/Botanico_logo.png" class="name-logo" />
+        <h2 class="rest-slogan">Urban Jungle Dining</h2>
       </div>
     </section>
     <section class="bar">

@@ -26,7 +26,7 @@ body {
   border-bottom: 1px solid #37332a;
 }
 
-#header .logo {
+#header {
   font-size: 30px;
   margin: 0;
   padding: 0;
@@ -37,12 +37,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#header .logo a {
+#header a {
   color: #fff;
 }
 
-#header .logo img {
-  max-height: 50px;
+.home-logo {
+  display: flex;
+  max-height: 60px;
+  justify-content: start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .fixed-top {
@@ -62,6 +66,7 @@ body {
 
 .navbar {
   padding: 0;
+  font-family: "Abril Fatface", sans-serif;
 }
 
 .navbar ul {
@@ -210,16 +215,34 @@ body {
 }
 
 .rest-name {
-  max-width: 30%;
+  /* max-width: 30%; */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 9rem;
+  margin-top: 8rem;
 }
 
 .name-logo {
-  max-height: 100%;
-  max-width: 100%;
+  display: block; /* Makes sure the image is treated as a block element */
+  width: 100%; /* Image will take up 100% of its container’s width */
+  max-width: 500px; /* The maximum width the image can reach */
+  min-width: 300px; /* The minimum width the image can shrink to */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 0 auto; /* Centers the image horizontally */
   opacity: 1;
+}
+
+.rest-slogan {
+  /* display: flex; */
+  color: white;
+  display: block; /* Makes sure the image is treated as a block element */
+  width: 100%; /* Image will take up 100% of its container’s width */
+  max-width: 500px; /* The maximum width the image can reach */
+  min-width: 300px; /* The minimum width the image can shrink to */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-family: "Abril Fatface", sans-serif;
+  text-align: center;
 }
 
 /* Second section */
