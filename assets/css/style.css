@@ -6,19 +6,20 @@ body {
   background-position: center center;
   background-attachment: fixed;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------
 # Header (layout from template)
 --------------------------------------------------------------*/
-#header {
+/* #header {
   background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
-  transition: all 0.5s;
-  z-index: 997;
   padding: 15px 0;
-  top: 40px;
-}
+  width: 100%;
+  z-index: 997;
+  top: 0;
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+} */
 
 #header.header-scrolled {
   top: 0;
@@ -27,34 +28,38 @@ body {
 }
 
 #header {
+  background: rgba(12, 11, 9, 0.6);
   font-size: 30px;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
   line-height: 1;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
 }
 
 #header a {
   color: #fff;
 }
 
-.home-logo {
+#header .container-xl {
   display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures space between logo and navbar */
+}
+
+.home-logo {
   max-height: 60px;
-  justify-content: start;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .fixed-top {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  width: 100%;
   z-index: 1030;
+  padding: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -63,7 +68,7 @@ body {
 /**
 * Desktop Navigation 
 */
-
+/* 
 .navbar {
   padding: 0;
   font-family: "Abril Fatface", sans-serif;
@@ -111,7 +116,7 @@ body {
 * Mobile Navigation 
 */
 
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
@@ -178,11 +183,12 @@ body {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-}
+} */
 
 /*------------------------
 # Media queries are mine
 --------------------------*/
+/*
 
 @media (max-width: 991px) {
   #header > .container-fluid {
@@ -202,6 +208,70 @@ body {
     margin: 5px 0 0 0;
     color: white;
     border: none;
+  }
+} */
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the nav links horizontally */
+  align-items: center;
+  flex-grow: 1; /* Ensure it takes up space between the logo and menu */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* Adjust for small screens */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Hide the menu by default on small screens */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger icon on small screens */
   }
 }
 
@@ -250,7 +320,9 @@ body {
 .image-container {
   position: relative;
   width: 100%; /* Set the desired width */
+  height: 30%;
   background-color: #00563d;
+  border: #00563d solid;
 }
 
 .background-image {

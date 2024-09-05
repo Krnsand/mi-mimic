@@ -38,9 +38,9 @@
   <body>
     <header id="header" class="fixed-top d-flex align-items-center">
       <div
-        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
-        <div class="logo me-auto me-lg-0">
+        <div class="logo">
           <a href="#">
             <img
               src="assets/images/cropped-botanico-icon.png"
@@ -50,19 +50,16 @@
           </a>
         </div>
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li>
-              <a class="nav-link scrollto" href="#">Jungle Bar</a>
-            </li>
-            <li><a class="nav-link scrollto" href="#">Restuarang</a></li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Privat Dining</a>
-            </li>
+        <!-- Navbar (Navigation Menu) -->
+        <nav id="navbar" class="navbar">
+          <ul class="nav-links">
+            <li><a class="nav-link scrollto" href="#">Jungle Bar</a></li>
+            <li><a class="nav-link scrollto" href="#">Restaurang</a></li>
+            <li><a class="nav-link scrollto" href="#">Privat Dining</a></li>
           </ul>
+          <div class="menu-icon" id="menu-icon">&#9776;</div>
+          <!-- Hamburger for smaller screens -->
         </nav>
-        <!-- .navbar -->
       </div>
     </header>
 
@@ -159,5 +156,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
