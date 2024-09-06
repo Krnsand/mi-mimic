@@ -359,30 +359,154 @@ body {
 
 /* Card section */
 
+/*-----------BAR---------------*/
+
 .bar {
   display: flex;
 }
 
-.card {
+/* Container for both images */
+.card-image-container {
   display: flex;
-  background-color: rgba(8, 60, 8, 0.2);
-  color: #fcfbfb;
+  width: 100%;
+  height: 100vh; /* Set the height to cover the entire viewport height (optional) */
 }
 
-.card-img-left {
-  flex: 0 0 60%;
+/* First image (left) - 40% of the width */
+.image-left {
+  flex: 0 0 40%; /* Flex-grow, flex-shrink, and basis (width) */
+  position: relative; /* Required for overlay positioning */
 }
 
-.card-img img {
-  max-width: 100%;
+.image-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
 }
 
-.imgage-bg-right {
-  flex: 0 0 40%;
+/* Overlay with color */
+.image-left .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 86, 61, 0.8); /* Overlay color with transparency */
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+  color: rgb(252, 250, 250);
 }
 
-.card-right .card-img {
-  order: 2;
+/* Text styling */
+.image-left .overlay-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Second image (right) - 60% of the width */
+.image-right {
+  flex: 0 0 60%; /* Flex-grow, flex-shrink, and basis (width) */
+}
+
+.image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+/*-----------RESTAURANT---------------*/
+
+/* Container for text on left and image on right */
+.rest-image-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Set the height to cover the whole viewport height */
+}
+
+/* Text block on the left - 40% of the width */
+.rest-text-right {
+  flex: 0 0 40%; /* Flex-grow, flex-shrink, and width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+}
+
+/* Overlay styling for the text */
+.rest-text-right .overlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Styling for the text inside the block */
+.rest-text-right .rest-overlay-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Right image - 60% of the width */
+.rest-image-left {
+  flex: 0 0 60%; /* Flex-grow, flex-shrink, and width */
+}
+
+.rest-image-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+/*-----------PRIVATE DINING---------------*/
+
+/* Container for text on left and image on right */
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Set the height to cover the whole viewport height */
+}
+
+/* Text block on the left - 40% of the width */
+.text-left {
+  flex: 0 0 40%; /* Flex-grow, flex-shrink, and width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+}
+
+/* Overlay styling for the text */
+.text-left .overlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Styling for the text inside the block */
+.text-left .overlay-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Right image - 60% of the width */
+.image-right {
+  flex: 0 0 60%; /* Flex-grow, flex-shrink, and width */
+}
+
+.image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
 }
 
 .card-text {
