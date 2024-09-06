@@ -43,6 +43,11 @@ body {
   color: #fff;
 }
 
+#header a:hover {
+  text-decoration: underline #f39200;
+  transition: color 0.3s ease-in-out;
+}
+
 #header .container-xl {
   display: flex;
   align-items: center;
@@ -333,4 +338,67 @@ body {
 .overlay-image {
   position: absolute;
   width: 100%;
+}
+
+/* Card section */
+
+.card {
+  display: flex;
+  background-color: rgba(8, 60, 8, 0.2);
+  border-radius: 0.7rem;
+  color: #fcfbfb;
+  margin: 1.5rem 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1.3rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card-img {
+  max-width: 50%;
+}
+
+.card-img img {
+  max-width: 100%;
+  border-radius: 0.7rem;
+}
+
+.card-right .card-img {
+  order: 2;
+}
+
+.card-text {
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+.card-text h3 {
+  font-family: "Playfair Display SC", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.3rem;
+  color: #fcfafa;
+}
+
+#my-plants img:hover {
+  border: 2px solid #98f598;
+}
+
+@media (max-width: 500px) {
+  .card {
+    display: block;
+    padding-bottom: 2rem;
+  }
+  .card-img {
+    max-width: 100%;
+  }
+  .card-text {
+    padding-top: 0.5rem;
+  }
+}
+
+footer {
+  color: #fff;
 }
