@@ -25,37 +25,34 @@
     <title>MI-mimic</title>
   </head>
 
-  <!-- <div class="logo me-auto me-lg-0">
-    <a href="#">
-      <img
-        src="assets/images/cropped-botanico-icon.png"
-        alt="logo"
-        class="home-logo"
-      />
-    </a>
-  </div> -->
-
   <body>
     <header id="header" class="fixed-top d-flex align-items-center">
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
         <div class="logo">
-          <a href="#">
+          <a href="#welcome">
             <img
               src="assets/images/cropped-botanico-icon.png"
               alt="logo"
               class="home-logo"
             />
           </a>
+          <button type="button" class="btn btn-primary">Boka nu</button>
         </div>
 
         <!-- Navbar (Navigation Menu) -->
         <nav id="navbar" class="navbar">
           <ul class="nav-links">
-            <li><a class="nav-link scrollto" href="#">Jungle Bar</a></li>
-            <li><a class="nav-link scrollto" href="#">Restaurang</a></li>
-            <li><a class="nav-link scrollto" href="#">Privat Dining</a></li>
+            <li><a class="nav-link scrollto" href="#bar">Jungle Bar</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#restaurant">Restaurang</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#private-dining"
+                >Privat Dining</a
+              >
+            </li>
           </ul>
           <div class="menu-icon" id="menu-icon">&#9776;</div>
           <!-- Hamburger for smaller screens -->
@@ -63,7 +60,7 @@
       </div>
     </header>
 
-    <section class="welcome">
+    <section id="welcome">
       <div class="rest-name">
         <img src="assets/images/Botanico_logo.png" class="name-logo" />
         <h2 class="rest-slogan">Urban Jungle Dining</h2>
@@ -86,12 +83,17 @@
         </div>
       </div>
     </section>
-    <section class="bar">
+    <section id="bar">
       <div class="card-image-container">
         <div class="image-left">
           <img src="assets/images/thedock_bw_bg_01.jpg" alt="First Image" />
           <div class="overlay">
             <div class="overlay-text">
+              <img
+                src="assets/images/Rityta-8.png"
+                alt="the number 1"
+                class="section-numbers"
+              />
               <h2>THE JUNGLE BAR</h2>
               <h3>HÄR BEFINNER VI OSS I REGNSKOGENS DJUP</h3>
               <p>
@@ -108,13 +110,18 @@
       </div>
     </section>
 
-    <section class="restaurant">
+    <section id="restaurant">
       <div class="rest-image-container">
         <div class="rest-image-left">
           <img src="assets/images/02_restaurangen_01.jpg" alt="left Image" />
         </div>
         <div class="rest-text-right">
           <div class="rest-overlay">
+            <img
+              src="assets/images/Rityta-8-kopia.png"
+              alt="the number 2"
+              class="section-numbers"
+            />
             <div class="rest-overlay-text">
               <h2>RESTAURANGEN</h2>
               <h3>
@@ -134,10 +141,15 @@
       </div>
     </section>
 
-    <section class="private-dining">
+    <section id="private-dining">
       <div class="image-container">
         <div class="text-left">
-          <div class="-rest-overlay">
+          <div class="rest-overlay">
+            <img
+              src="assets/images/icon-3.png"
+              alt="the number 3"
+              class="section-numbers"
+            />
             <div class="rest-overlay-text">
               <h2>PRIVATE DINING</h2>
               <h3>
