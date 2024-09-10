@@ -63,7 +63,38 @@
     </header>
 
     <div>
-      <h1>Newsletter time</h1>
+      <form action="/action_page.php">
+        <div class="container">
+          <h2 class="news-h2">Anmäl dig till vårt Nyhetsbrev</h2>
+          <p class="news-text">
+            Vill du vara först med att få veta när vi uppdaterar vår meny? Eller
+            varför inte få reda på när din favorit DJ spelar? Signa då upp dig
+            för vårt nyhetsbrev!
+          </p>
+        </div>
+
+        <div class="container" style="background-color: white">
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="text" placeholder="Email address" name="mail" required />
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe" /> Monthly
+            Newsletter
+          </label>
+        </div>
+
+        <div class="container">
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
     </div>
+    <footer>
+      <div>
+        <h4>Contact section</h4>
+        <div>
+          Skriv upp er till vårt newsletter för roliga updates på menyn! press
+          <a class="nav-link" href="newsletter.html">here</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
