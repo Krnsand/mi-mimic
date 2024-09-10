@@ -142,8 +142,8 @@ body {
 /* First section */
 
 #welcome {
-  margin-top: 15rem;
-  height: 1000px; /* To create enough content to scroll */
+  margin-top: 14rem;
+  height: 900px; /* To create enough content to scroll */
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -218,6 +218,7 @@ body {
 
 strong {
   font-family: "Abril Fatface", sans-serif;
+  font-weight: 100;
   color: #fff6de;
   font-size: 30px;
   letter-spacing: 5px;
@@ -225,6 +226,7 @@ strong {
 
 h2 {
   font-family: "Abril Fatface", sans-serif;
+  font-weight: 100;
   color: #fff6de;
   letter-spacing: 4px;
   margin-bottom: 1rem;
@@ -232,6 +234,7 @@ h2 {
 
 h3 {
   font-family: "Abril Fatface", sans-serif;
+  font-weight: 100;
   color: #f39200;
   letter-spacing: 4px;
   font-size: 25px;
@@ -239,6 +242,7 @@ h3 {
 
 p {
   font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 100;
   color: #fff6de;
   margin: 2rem;
 }
@@ -273,11 +277,11 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(0, 86, 61, 0.8); /* Overlay color with transparency */
+  background-color: rgb(4, 57, 40, 0.8); /* Overlay color with transparency */
   display: flex;
   justify-content: center; /* Centers text horizontally */
   align-items: center; /* Centers text vertically */
-  color: rgb(252, 250, 250);
+  color: rgb(250, 255, 250);
 }
 
 /* Text styling */
@@ -319,10 +323,9 @@ p {
 .rest-text-right {
   flex: 0 0 40%; /* Flex-grow, flex-shrink, and width */
   display: flex;
-
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: white;
+  /* color: white; */
   padding: 20px;
 }
 
@@ -387,20 +390,23 @@ p {
 /*-----------PRIVATE DINING---------------*/
 
 /* Container for text on left and image on right */
-#private-dining .image-container {
+#private-dining .private-image-container {
   display: flex;
   width: 100%;
-  height: 80vh; /* Set the height to cover the whole viewport height */
+  height: 100vh; /* Set the height to cover the whole viewport height */
 }
 
 /* Text block on the left - 40% of the width */
-.text-left {
+.private-text-left {
   flex: 0 0 40%; /* Flex-grow, flex-shrink, and width */
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: white;
   padding: 20px;
+}
+
+.private-p {
+  font-size: 25px;
 }
 
 /* Overlay styling for the text */
@@ -428,7 +434,7 @@ p {
 
 .video-container video {
   width: 100%;
-  height: 100%; /* Ensures the video takes full height of its container */
+  height: 100vh; /* Ensures the video takes full height of its container */
   object-fit: cover; /* Ensures the video covers the area without distortion */
   display: flex;
   justify-content: center; /* Horizontally center the video */
@@ -440,10 +446,6 @@ p {
   height: auto;
   width: 50%;
 }
-
-/* .card-text p {
-  font-family: "Cormorant Garamond", sans-serif;
-} */
 
 @media (max-width: 500px) {
   .card {
@@ -460,4 +462,7 @@ p {
 
 footer {
   color: #fff;
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Set the height to cover the whole viewport height */
 }
