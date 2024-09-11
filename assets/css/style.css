@@ -10,7 +10,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Header (layout from template)
+# Header (från Bootstrap)
 --------------------------------------------------------------*/
 
 #header.header-scrolled {
@@ -40,11 +40,6 @@ body {
   text-decoration: underline #f39200;
   transition: color 0.3s ease-in-out;
 }
-
-/* On hover, animate the underline */
-/* .menu a:hover::after {
-  width: 100%; 
-}*/
 
 #header .container-xl {
   display: flex;
@@ -92,9 +87,9 @@ body {
 /* Navbar styling */
 .navbar {
   display: flex;
-  justify-content: center; /* Center the nav links horizontally */
+  justify-content: center;
   align-items: center;
-  flex-grow: 1; /* Ensure it takes up space between the logo and menu */
+  flex-grow: 1;
 }
 
 .navbar ul {
@@ -134,7 +129,7 @@ body {
 /* Adjust for small screens */
 @media (max-width: 768px) {
   .navbar ul {
-    display: none; /* Hide the menu by default on small screens */
+    display: none;
     flex-direction: column;
     width: 100%;
   }
@@ -149,7 +144,7 @@ body {
   }
 
   .menu-icon {
-    display: block; /* Show the hamburger icon on small screens */
+    display: block;
   }
 }
 
@@ -157,35 +152,34 @@ body {
 
 #welcome {
   margin-top: 14rem;
-  height: 900px; /* To create enough content to scroll */
+  height: 900px;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
 .rest-name {
-  /* max-width: 30%; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 8rem;
 }
 
 .name-logo {
-  display: block; /* Makes sure the image is treated as a block element */
-  width: 100%; /* Image will take up 100% of its container’s width */
-  max-width: 500px; /* The maximum width the image can reach */
-  min-width: 300px; /* The minimum width the image can shrink to */
-  height: auto; /* Maintains the aspect ratio */
-  margin: 0 auto; /* Centers the image horizontally */
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+  margin: 0 auto;
   opacity: 1;
 }
 
 .rest-slogan {
   color: white;
-  display: block; /* Makes sure the image is treated as a block element */
-  width: 100%; /* Image will take up 100% of its container’s width */
-  max-width: 500px; /* The maximum width the image can reach */
-  min-width: 300px; /* The minimum width the image can shrink to */
-  height: auto; /* Maintains the aspect ratio */
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
   margin: 0 auto;
   margin-top: 2rem;
   font-family: "Abril Fatface", sans-serif;
@@ -262,44 +256,38 @@ p {
   margin: 2rem;
 }
 
-/* Card section */
-
 /*-----------BAR---------------*/
 
-/* Container for both images */
 .card-image-container {
   display: flex;
   width: 100%;
-  height: 100vh; /* Set the height to cover the entire viewport height (optional) */
+  height: 100vh;
 }
 
-/* First image (left) - 40% of the width */
 .image-left {
-  flex: 0 0 40%; /* Flex-grow, flex-shrink, and basis (width) */
-  position: relative; /* Required for overlay positioning */
+  flex: 0 0 40%;
+  position: relative;
 }
 
 .image-left img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+  object-fit: cover;
 }
 
-/* Overlay with color */
 .image-left .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(4, 57, 40, 0.8); /* Overlay color with transparency */
+  background-color: rgb(4, 57, 40, 0.8);
   display: flex;
-  justify-content: center; /* Centers text horizontally */
-  align-items: center; /* Centers text vertically */
+  justify-content: center;
+  align-items: center;
   color: rgb(250, 255, 250);
 }
 
-/* Text styling */
 .image-left .overlay-text {
   font-size: 24px;
   font-weight: bold;
@@ -315,36 +303,32 @@ p {
   padding: 10px;
 }
 
-/* Second image (right) - 60% of the width */
 .image-right {
-  flex: 0 0 60%; /* Flex-grow, flex-shrink, and basis (width) */
+  flex: 0 0 60%;
 }
 
 .image-right img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+  object-fit: cover;
 }
 
 /*-----------RESTAURANT---------------*/
 
-/* Container for text on left and image on right */
 .rest-image-container {
   display: flex;
   width: 100%;
-  height: 100vh; /* Set the height to cover the whole viewport height */
+  height: 100vh;
 }
 
-/* Text block on the left - 40% of the width */
 .rest-text-right {
-  flex: 0 0 40%; /* Flex-grow, flex-shrink, and width */
+  flex: 0 0 40%;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 50px;
 }
 
-/* Overlay styling for the text */
 .rest-text-right .overlay {
   width: 100%;
   display: flex;
@@ -352,7 +336,6 @@ p {
   height: 100%;
 }
 
-/* Styling for the text inside the block */
 .rest-text-right .rest-overlay-text {
   font-size: 24px;
   font-weight: bold;
@@ -367,33 +350,30 @@ p {
   padding: 10px;
 }
 
-/* Right image - 60% of the width */
 .rest-image-left {
-  flex: 0 0 60%; /* Flex-grow, flex-shrink, and width */
+  flex: 0 0 60%;
 }
 
 .rest-image-left img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container without stretching */
+  object-fit: cover;
 }
 
-/* Button container */
 .button-container {
   display: flex;
-  justify-content: center; /* Centers the buttons horizontally */
-  gap: 20px; /* Adds space between the buttons */
-  margin-top: 20px; /* Adds some space above the buttons */
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* Styling for the buttons */
 .button-container button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   font-family: "Abril Fatface", sans-serif;
   letter-spacing: 2px;
-  background-color: #4caf4f00; /* Button color */
+  background-color: #4caf4f00;
   color: #f39200;
   border: white solid 1px;
   transition: background-color 0.3s ease;
@@ -401,19 +381,17 @@ p {
 
 /*-----------PRIVATE DINING---------------*/
 
-/* Container for text on left and image on right */
 #private-dining .private-image-container {
   display: flex;
   width: 100%;
-  height: 100vh; /* Set the height to cover the whole viewport height */
+  height: 100vh;
 }
 
-/* Text block on the left - 40% of the width */
 .private-text-left {
-  flex: 0 0 40%; /* Flex-grow, flex-shrink, and width */
+  flex: 0 0 40%;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
 
@@ -421,14 +399,12 @@ p {
   font-size: 25px;
 }
 
-/* Overlay styling for the text */
 .text-left .overlay {
   width: 100%;
   display: flex;
   height: 100%;
 }
 
-/* Styling for the text inside the block */
 .text-left .overlay-text {
   font-size: 24px;
   font-weight: bold;
@@ -440,18 +416,17 @@ p {
   padding: 60px;
 }
 
-/* Video container - 60% of the width */
 .video-container {
-  flex: 0 0 60%; /* Takes up 60% of the width */
+  flex: 0 0 60%;
 }
 
 .video-container video {
   width: 100%;
-  height: 100vh; /* Ensures the video takes full height of its container */
-  object-fit: cover; /* Ensures the video covers the area without distortion */
+  height: 100vh;
+  object-fit: cover;
   display: flex;
-  justify-content: center; /* Horizontally center the video */
-  align-items: center; /* Vertically center the video */
+  justify-content: center;
+  align-items: center;
 }
 
 .card-text {
@@ -467,7 +442,7 @@ footer {
   color: #fff;
   display: flex;
   width: 100%;
-  height: 60vh; /* Set the height to cover the whole viewport height */
+  height: 60vh;
 }
 .contact-info {
   text-align: start;
@@ -485,10 +460,10 @@ footer {
 }
 
 .contact-list li {
-  flex: 1 1 300px; /* Each item will take up a minimum of 200px, but shrink or grow based on space */
-  max-width: 300px; /* Ensures items don't grow too large */
-  margin: 10px; /* Adds some spacing between the items */
-  text-align: start; /* Centers the content of each list item */
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin: 10px;
+  text-align: start;
 }
 
 .item-title {
@@ -536,7 +511,7 @@ hr {
 
 form {
   margin-top: 5rem;
-  height: 900px; /* To create enough content to scroll */
+  height: 900px;
   padding: 0 500px;
   font-family: Arial, sans-serif;
 }
