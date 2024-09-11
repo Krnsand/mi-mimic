@@ -41,6 +41,11 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
+/* On hover, animate the underline */
+/* .menu a:hover::after {
+  width: 100%; 
+}*/
+
 #header .container-xl {
   display: flex;
   align-items: center;
@@ -73,6 +78,15 @@ body {
   border: none;
   top: 25px;
   width: 100px;
+}
+
+.btn-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 /* Navbar styling */
