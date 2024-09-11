@@ -10,6 +10,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,7 +65,7 @@
       </div>
     </header>
 
-    <div>
+    <div class="form-page">
       <form action="/action_page.php">
         <div class="container">
           <h2 class="news-h2">Anmäl dig till vårt Nyhetsbrev</h2>
@@ -73,7 +76,7 @@
           </p>
         </div>
 
-        <div class="container" style="background-color: white">
+        <div class="container">
           <input type="text" placeholder="Name" name="name" required />
           <input type="text" placeholder="Email address" name="mail" required />
           <label>
@@ -89,10 +92,50 @@
     </div>
     <footer>
       <div>
-        <h4>Contact section</h4>
-        <div>
-          Skriv upp er till vårt newsletter för roliga updates på menyn! press
-          <a class="nav-link" href="newsletter.html">here</a>
+        <div class="contact-info">
+            <ul class="contact-list">
+              <li>
+                <div class="item-title">KONTAKTA OSS</div>
+                <hr>
+                <p class="f-p">info@botanico.se
+
+                031–15 14 48</p>
+              </li>
+              <li>
+                <div class="item-title">ADRESS</div>
+                <hr>
+                <p class="f-p">Aschebergsgatan 23
+
+                411 27 Göteborg</p>
+              </li>
+              <li>
+                <div class="item-title">ÖPPETTIDER</div>
+                <hr>
+                <p class="f-p">Måndag: Stängt
+                  Tis–Tors: 17–sent
+                  
+                  Fre–Lör: 17–01
+                  
+                  (Djungelbaren: från 16)
+                  <br>
+                  •
+                  <br>
+                  Söndag: Stängt</p>
+              </li>
+              <li>
+                <div class="item-title">FÖLJ OSS</div>
+                <hr>
+                <p class="f-p"><i class="fa-brands fa-instagram"></i> Instagram</p>
+              </li>
+              <li>
+                <div class="item-title">NYHETSBREV</div>
+                <hr>
+                <a class="nav-link" href="newsletter.html">
+                <p class="f-p">Intresserad av att få uppdateringar från oss? Skriv upp dig till vårt nyhetsbrev!</p></a>
+              
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
