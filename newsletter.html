@@ -25,7 +25,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>MI-mimic</title>
+    <title>Botanico</title>
   </head>
 
   <body>
@@ -78,10 +78,11 @@
         </div>
 
         <div class="container">
-          <input type="text" placeholder="Name" name="name" required />
-          <input type="text" placeholder="Email address" name="mail" required />
+          <input type="text" placeholder="Name" name="name" required aria-label="name" />
+          <input type="text" placeholder="Email address" name="mail" required aria-label="mail" />
+        </label>
           <label>
-            <input type="checkbox" checked="checked" name="subscribe" /> Monthly
+            <input type="checkbox" checked="checked" name="subscribe" aria-label="checkbox"/> Monthly
             Newsletter
           </label>
         </div>
